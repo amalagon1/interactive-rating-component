@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Lighter-Blue:hsl(213, 19%, 25%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+
+* {
+    margin: 0;
+   
+}
+
+body {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: var(--Very-Dark-Blue);  
+font-family: overpass;
+}
+
+.card {
+    height: 350px;
+    width: 350px;
+    border-radius: 8%;
+    padding: 5px;
+    background: var(--Dark-Blue);
+    overflow: hidden;
+}
+
+.star {
+    height: 1.2rem;
+    width: 1.2rem;
+    line-height: 1.2rem;
+    border-radius: 50%;
+    text-align: center;
+    background: var(--Lighter-Blue);
+    padding: 8px;
+    
+}
+
+.instruction {
+    color: var(--Medium-Grey);
+}
+
+.rating-card__items {
+    /* background: var(--Dark-Blue); */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.rating-card__items span {
+    border-radius: 50%;
+    background: var(--Lighter-Blue);
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: var(--Medium-Grey);
+    cursor: pointer;
+    
+}
+
+
+.rating-number {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.rating-number span:hover {
+    background-color: var(--Orange);
+    color: white;
+}
+
+.rating-number span:focus{
+    background-color: var(--Medium-Grey);
+}
+
+.real-number {
+    position: absolute;
+    bottom: 50%;
+    text-align: center;
+}
+
+.rating-card__items > * {
+    margin-bottom: 10px
+}
+.title {
+    color: white;
+}
+.btn-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.submit {
+    border-radius: 20px;
+    width: 280px;
+    height: 40px;
+    background: var(--Orange);
+    border: transparent;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background: white;
+    color: var(--Orange);
+}
+.thank-you-card {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.thank-you-card h1 {
+    color: white;
+}
+
+.thank-you-card p {
+    text-align: center;
+    color: var(--Light-Grey);
+}
+
+.thank-you-img {
+    height: 5rem;
+    width: 7rem;
+}
+
+.selected{
+    background: var(--Lighter-Blue);
+    color: var(--Orange);
+    padding: 7px 20px;
+    border-radius: 20px;
+}
